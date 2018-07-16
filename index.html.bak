@@ -1,0 +1,571 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Jacopo Bertolotti</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Jacopo Bertolotti<br />
+        </h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="cv.html">About me</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <h2>News</h2>
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;"><span style="font-weight: bold;"><span
+                    style="font-weight: bold;"><span style="font-weight: bold;">22
+                      July 2016</span><br />
+                  </span></span></span></span></span><img align="left" title="Leverhulme_Logo"
+            alt="Leverhulme_Logo" src="images/Moseley.jpg" style="width: 200px; height: 100px;" />At
+          the beginning of July the IoP awarded me with the Moseley Medal for
+          experimental Physics! This is one of the early career awards (together
+          with the Maxwell medal for theoretical Physics, and the Paterson medal
+          for applied Physics) given by the Institute of Physics each year. Past
+          recipients were people of the calibre of Giuseppe Occhialini, Jeremy
+          Baumberg, and Jeremy O'Brien, so I feel very honored to be in such
+          company!<br />
+          You can find the full citation here.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;"><span style="font-weight: bold;"><span
+                    style="font-weight: bold;"><span style="font-weight: bold;"><span
+                        style="font-weight: bold;"><span style="font-weight: bold;"><span
+                            style="font-weight: bold;"><span style="font-weight: bold;"><span
+                                style="font-weight: bold;"><span style="font-weight: bold;">16
+                                  February 2016</span><br />
+                              </span></span></span></span></span></span></span></span></span></span></span>New
+          publication!<br />
+          The paper is entitled "<i>Quantum correlation of light scattered by
+            disordered media</i>" and study theoretically quantum correlations
+          in light scattered by a disordered medium. The main finding of the
+          paper is that, even when the input light is very "classical" (e.g.
+          thermal), the multiple scattering process is enough for the output
+          modes to develop quantum correlations in the form of quantum discord.<br />
+          You can find the paper <a href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-24-5-4662">here</a>
+          (and download it freely, as it is published under a CC-BY license), or
+          you can download the pdf direactly from <a href="papers/OptExpress2016.pdf">here</a>.<br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;"><span style="font-weight: bold;"><span
+                    style="font-weight: bold;"><span style="font-weight: bold;"><br />
+                      16 October 2015</span><br />
+                  </span></span></span></span></span><img align="left" title="Leverhulme_Logo"
+            alt="Leverhulme_Logo" src="images/Leverhulme.jpg" style="width: 150px; height: 88px;" />I
+          am told I am one of the <a href="https://www.leverhulme.ac.uk/funding/grant-schemes/philip-leverhulme-prizes">Philip
+            Leverhulme Prize</a> winners (for the Physics category)! The
+          official list of winners is not out yet, as they are waiting to
+          receive acceptance from all the recipients, but it probably will be in
+          a few days. As you can easily guess I am extremely happy about it :-)<br />
+          <span style="font-weight: bold;">Update:<br />
+          </span>The prize page was not updated yet, but the list of winners can
+          now be found online (or you can download it from <a href="documents/2015_Philip_Leverhulme_Prize.pdf">here</a>).<br />
+          <br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;"><span style="font-weight: bold;"><span
+                    style="font-weight: bold;"><span style="font-weight: bold;">12
+                      October 2015</span><br />
+                  </span></span></span></span></span>Last week I was in
+          Indonesia as a guest of the <a href="http://www.lipi.go.id/">Indonesian
+            Institute of Science (Lipi)</a> to give a keynote talk at the <a href="http://situs.opi.lipi.go.id/isfap2015/">ISFAP
+            2015</a> conference. I also gave a talk at the <a href="http://ipb.ac.id/">Bogor
+            University</a>, where I was hosted by <a href="http://alatas.staff.ipb.ac.id/">Prof.
+            Husin Alatas</a>, in front of a large group of very enthusiastic
+          students.<br />
+          <br />
+          <span style="font-weight: bold;">28 September 2015<span style="font-weight: bold;"><br />
+            </span></span>I will give an invited talk at the <a href="http://spie.org/photonics-europe.xml?WT.mc_id=REPE16GB">SPIE Photonics
+            Europe 2016</a> conference at the <a href="http://spie.org/EPE/conferencedetails/photonic-crystal-materials-devices">Photonic
+            crystal materials and devices (EPE103)</a> symposium, held in
+          Brussels from the 4th to the 7th April 2016.<br />
+          <br />
+          <span style="font-weight: bold;">13 July 2015<span style="font-weight: bold;"><br />
+            </span></span>New <em>News&amp;Views</em> published! The paper you
+          should probably read is <a href="http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys3373.html">the
+            one from </a><span class="vcard author"><span class="fn"><a href="http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys3373.html">Judkewitz
+                <em>et al.</em></a> but if you are looking for a layman
+              explanation, my News&amp;Views is <a href="http://www.nature.com/nphys/journal/vaop/ncurrent/full/nphys3389.html">here</a>
+              (or you can download directly the pdf from <a href="papers/NatPhys2015-NewViews.pdf">here</a>).<br />
+              <br />
+            </span></span> <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">19 May 2015</span><br />
+            </span></span>New publication!<br />
+          The paper "<em>Characterization of the angular memory effect of
+            scattered light in biological tissues</em>" appeared online a few
+          days ago, and present a detailed characterization of the optical
+          memory effect in systems where scattering is not isotropic (e.g. most
+          biological tissues). Most of the credit goes to San Schott, who did a
+          brilliant job (if you consider that at the time he was an
+          undergraduate you will understand how impressive his work was).<br />
+          You can find the paper <a href="https://www.osapublishing.org/oe/abstract.cfm?uri=oe-23-10-13505">here</a>,
+          or you can download the pdf directly from <a href="http://www.jacopobertolotti.com/papers/OptExpress2015.pdf">here</a>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">27 April 2015</span><br />
+            </span></span>New publication!<br />
+          The paper is entitled <em>"Speckle correlation resolution enhancement
+            of wide-field fluorescence imaging"</em> and report on a novel
+          technique to use a scattering lens for high-resolution imaging with a
+          large field of view. Most of the hard work was done by Hasan Yilmaz
+          (based on an idea from Elbert van Putten).<br />
+          You can find the paper <a href="http://www.opticsinfobase.org/optica/abstract.cfm?uri=optica-2-5-424">here</a>,
+          or you can download the pdf directly from <a href="papers/Optica2015.pdf">here</a>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">22 April 2015</span><br />
+            </span></span>Today I gave an invited talk at the <a href="http://www.ppnec.org/index.html">PPNEC
+            2015</a> conference at the <a href="http://www.dpg-physik.de/dpg/pbh/index.html?lang=en">Physikzentrum</a>
+          in Bad Honnef. A big "thank you" to <a href="http://www.uni-tuebingen.de/en/faculties/faculty-of-science/departments/physics/institutes/institute-for-theoretical-physics/condensed-matter/photonics.html">Dr.
+            Regine Frank</a> for organizing the conference and for the
+          invitation.<br />
+          The next  appointments will be a seminar at the University of St.
+          Andrews (thanks to <a href="http://www.st-andrews.ac.uk/microphotonics/Includes/MembersContentIndividual.php?first=Andrea&amp;last=Di%20Falco">Dr.
+            Andrea Di Falco</a> for the invitation) on Tuesday 12 May, and then
+          an invited talk at the <a href="http://situs.opi.lipi.go.id/isfap2015/">ISFAP
+            2015</a> conference, that will take place from the 5th to the 7th of
+          October in Bandung (Indonesia). Here the thanks go to <a href="https://indonesianphotoniccenter.wordpress.com/muhammad-danang-birowosuto/">Dr.
+            Muhammad Danang Birowosuto</a>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">02 October 2014</span><br />
+            </span></span>New paper published! Well, ok. Not a <em>real</em>
+          paper. It is just a News&amp;Views item on Nature Photonics to give a
+          layman explanation of the very nice <a href="http://www.nature.com/nphoton/journal/v8/n10/full/nphoton.2014.189.html">work
+            from Katz </a><em><a href="http://www.nature.com/nphoton/journal/v8/n10/full/nphoton.2014.189.html">et
+              al</a>.</em> Still, I am very proud of it, so you can find the
+          original <a href="http://www.nature.com/nphoton/journal/v8/n10/full/nphoton.2014.222.html">here</a>,
+          or you can download the pdf directly from <a href="papers/NatPhot2014-NewViews.pdf">here</a>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">15 September 2014</span><br />
+            </span></span>A big welcome to <a href="http://emps.exeter.ac.uk/physics-astronomy/staff/amp220">Alba
+            Maria Paniagua Diaz</a> and <a href="http://emps.exeter.ac.uk/physics-astronomy/staff/is283">Ilya
+            Starshinov</a>, who just started their PhD and become part of the <a
+            href="http://emps.exeter.ac.uk/physics-astronomy/research/emag/themes/naturaldisorder/disorder/">disordered
+            systems</a> family!<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">17 July 2014</span><br />
+            </span></span>New paper published!<br />
+          The paper is entitled <span style="font-style: italic;">"Superpixel-based
+            spatial amplitude and phase modulation using a digital micromirror
+            device"</span>, and describes a novel method to achieve complete
+          amplitude and phase modulation. A lot of credit goes to S.A Goorden,
+          who had the original idea and did a large chunk of the work. You can
+          find the paper <a href="http://www.opticsinfobase.org/oe/abstract.cfm?uri=oe-22-15-17999">here</a>,
+          or you can download the pdf directly from <a href="papers/OptExpress2014.pdf">here</a>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">09 July 2014</span><br />
+            </span></span>I will give an invited talk at <a href="http://spie.org/x13196.xml">BiOS/Photonics
+            West</a>, 7-2 February in San Francisco (USA) on the subject <i>Non-invasive
+            imaging through opaque scattering layers</i>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">08 May 2014</span><br />
+            </span></span>I gave a <a href="http://www2.warwick.ac.uk/fac/sci/physics/news/events/?calendarItem=094d43d54479599901448cdd5f124e8a">seminar</a>
+          at the <a href="http://www2.warwick.ac.uk/fac/sci/physics/">University
+            of Warwick</a>. A big thanks to <a href="http://www2.warwick.ac.uk/fac/sci/physics/staff/academic/dambrumenil">Dr.
+            Nicholas d'Ambrumenil</a> for inviting me, and to <a href="http://www2.warwick.ac.uk/fac/sci/physics/staff/academic/roemer/">Prof.
+            Rudolf Roemer</a> and <a href="http://homepages.warwick.ac.uk/%7Ephscz/">Prof.
+            Matthew Turner</a> for the very nice discussions.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">02 May 2014</span><br />
+            </span></span>I gave an invited talk at the PND@10 Workshop
+          organized by Bill Barnes here at Exeter. It was a bit strange to talk
+          about multiple scattering and superdiffusion to an audience mostly
+          specialized in plasmonics. But talking with people with a fresh
+          perspective is always nice.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">11 March 2014</span><br />
+            </span></span>I have an opening for a PhD student to work on imaging
+          in turbid media! If you are interested (or you know anyone who might)
+          please look <a href="http://www.exeter.ac.uk/studying/funding/award/?id=1466">here</a>
+          or download the advert (as a pdf) from <a href="documents/Studentship_advert-2014.pdf">here</a>.
+          The deadline for applying is the 18th of April.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">21 February 2014</span><br />
+            </span></span>I was awarded a <a href="http://royalsociety.org/grants/schemes/research-grants/">Research
+            Grant</a> from <a href="http://royalsociety.org/">The Royal Society</a>
+          for my project <span style="font-style: italic;">"Imaging in turbid
+            media using a digital micromirror device"</span>.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">17 January 2014</span><br />
+            </span></span>I will give an invited talk at <a href="http://piers.org/piers2014Guangzhou/">PIERS
+            2014</a>, 25-28 August in Guangzhou (China). I will speak in the
+          focus session <a href="http://piers.org/piers2014Guangzhou/session.php?session_id=S034">SC3&amp;2:
+            Disordered Photonics</a>, organized by <a href="http://quantum-photonics.nbi.ku.dk/">Dr.
+            P. D. Garcia-Fernández</a>. <br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">27 November 2013</span><br />
+            </span></span>Some long due update to the website. New affiliation,
+          new e-mail address, new postal address.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">06 August 2013</span><br />
+            </span></span>Starting next September I will begin a new appointment
+          as a <a href="http://en.wikipedia.org/wiki/Lecturer#Academic_usage">Lecturer</a>
+          (the British way of calling an Assistant Professor) at the <a href="http://www.exeter.ac.uk/">University
+            of Exeter</a>. In particular I will be part of the <a href="http://emps.exeter.ac.uk/physics-astronomy/research/emag/">Electromagnetic
+            and Acoustic Materials group</a> in the <a href="http://emps.exeter.ac.uk/physics-astronomy/">Physics
+            and Astronomy Department</a>. I will start my own lab, working on
+          light scattering in disordered media and imaging in turbid materials.<br />
+          This is a new beginning and, as such, it is very exciting and a bit
+          scary. Finger crossed!<br />
+          <br />
+          I also got an invitation to give an invited talk at the <a href="http://www.opt.utsunomiya-u.ac.jp/iwh13/">IWH
+            2013</a> conference in Japan. The conference location is a bit far
+          away from the usual destinations (the north of Hokkaido is seriously
+          far away from Tokyo), but it will be my first time in the land of the
+          raising sun. I did not organize anything yet, so I do not have a lot
+          of information myself.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;"><span
+                style="font-weight: bold;">10 April 2013</span><br />
+            </span></span>For this spring/summer I am invited at two
+          conferences.<br />
+          The first one is <a href="http://www.cleoeurope.org/">CLEO Europe
+            2013</a>, 12-16 May in Munich (Germany). Originally my talk was a
+          submitted one, but they upgraded it to invited. I admit I had no idea
+          this was even possible, but I am definitively not complaining. I will
+          give my talk, entitled <span style="font-style: italic;">Noninvasive
+            Fluorescence Imaging through Strongly Scattering Layers</span>, on
+          Sunday<span style="font-style: italic;"> </span>12 at 16.30 in the
+          session <span style="font-style: italic;">Biophotonics and
+            Applications II</span> (room 13b).<br />
+          The second one is <a href="http://www.osa.org/en-us/meetings/optics_and_photonics_congresses/imaging_and_applied_optics/computational_optical_sensing_and_imaging/">
+            Computational Optical Sensing and Imaging (COSI)</a>, 23-27 June in
+          Arlington, Virginia (USA). They do not seem to have a program
+          available yet. But I will update this entry as soon as I discover when
+          my talk is supposed to be.<br />
+          <br />
+          <span style="font-weight: bold;"><span style="font-weight: bold;">03
+              April 2013</span><br />
+          </span>Abstract submission and registration are open for the <a href="http://sciencecamp.eu/">Complex
+            Nanophotonics Science Camp</a>! We managed to secure a good amount
+          of fundings, so the registration fee is very low and we have several
+          possible scholarships for everyone who just can not afford it. <a href="http://sciencecamp.eu/register-now">Join
+            us</a>!<br />
+          <span style="font-weight: bold;"><br />
+            01 March 2013</span><br />
+          Change of job! Starting from March I am moving from The Netherlands to
+          France. I will spend a few months at the <a href="http://www.institut-langevin.espci.fr/">Institut
+            Langevin</a> (Paris) in the group of <a href="http://www.institut-langevin.espci.fr/Sylvain-GIGAN,114">Sylvain
+            Gigan</a>.<br />
+          <br />
+          <span style="font-weight: bold;">10 January 2013</span><br />
+          Pre-registrations for the <a href="http://sciencecamp.eu">Complex
+            Nanophotonics Science Camp</a> are open! The Science Camp aims to
+          bring together a generation of early career scientists (strictly
+          &lt;10 years from Ph.D.) working in this exciting research area, at
+          the boundaries between nanophotonics, biophotonics and complexity
+          science.<br />
+          We managed to secure an <a href="http://sciencecamp.eu/speakers">amazing
+            group of invited speakers</a> and a <a href="http://sciencecamp.eu/venue">beautiful
+            location</a>. So, <a href="http://sciencecamp.eu/register-now">join
+            us</a>!<br />
+          <br />
+          <span style="font-weight: bold;">14 December 2012</span><br />
+          <img align="left" src="images/breakthrough2012_PhysicsWorld.jpg" alt="breakthrough logo"
+            style="width: 220px; height: 135px;" />Thoday <a href="http://physicsworld.com/">Physics
+            World</a> announced its <a href="http://physicsworld.com/cws/article/news/2012/dec/14/physics-world-reveals-its-top-10-breakthroughs-for-2012">TOP
+10
+            breakthrough for the year 2012</a>. Of course the <span style="font-style: italic;">Breakthrough
+            of the year</span> prize went to the ATLAS and CMS collaborations at
+          CERN for the <a href="http://physicsworld.com/cws/article/news/2012/jul/04/cern-discovers-higgs-like-boson">discovery
+of
+            the Higgs boson</a>. But our recent work on <a href="http://www.nature.com/nature/journal/v491/n7423/full/nature11578.html">imaging
+through
+            opaque materials</a> found its place among the 9 <span style="font-style: italic;">highly
+            commended</span> researches that make the top 10. Side by side with
+          some truly amazing scientific results like the <a href="http://www.sciencemag.org/content/336/6084/1003.full">discovery
+of
+            Majorana fermions</a>, the fact that the <a href="http://prl.aps.org/abstract/PRL/v109/i21/e211801">time-reversal
+symmetry
+            is violated</a>, a <a href="http://arxiv.org/abs/1203.2847">neutrino-based
+            communication</a> and others.<br />
+          <br />
+          <span style="font-weight: bold;"><br />
+            13 November 2012</span><br />
+          <img align="left" src="images/MesaPlus.jpg" alt="MESA + logo" style="width: 200px; height: 88px;" />Thoday
+          I was invited to present our results on imaging through opaque layers
+          at the MESA+ Colloquium. Every month the MESA+ Institute organize a
+          colloquium where one speaker from within the MESA+ and one speaker
+          from outside are invited to talk about their research. Such occasions
+          are a brilliant opportunity to show what you do to people that might
+          be geographically close to you, but work on very different topics and
+          interact with them. It is also a good moment to see how people from a
+          different field react to what you show them.<br />
+          <br />
+          <span style="font-weight: bold;">09 November 2012</span><br />
+          This week I was at the Poincaré Institute in Paris to participate to
+          the <a href="http://mesoimage.grenoble.cnrs.fr/spip.php?article163">MésoImage
+            Workshop</a>. Despite the humble name it was an extremely
+          interesting (albeit small) conference, with a lot of excellent talks.
+          There I presented our work "<a href="papers/Nature2012.pdf">Non-invasive
+            imaging through opaque scattering layers</a>" just the day after it
+          was published.<br />
+          <br />
+          <span style="font-weight: bold;">08 November 2012</span><br />
+          <img align="left" src="images/Nature491cover.jpg" alt="Nature Cover" style="width: 180px; height: 237px;" />After
+          two years of work the article "Non-invasive imaging through opaque
+          scattering layers" is finally out!<br />
+          Not only we managed to get it <a href="http://www.nature.com/nature/journal/v491/n7423/full/nature11578.html">published
+in
+            Nature</a>, but we also got <a href="http://www.nature.com/nature/journal/v491/n7423/index.html">the
+            cover</a> and a <a href="http://www.nature.com/nature/journal/v491/n7423/full/491197a.html">News&amp;Views</a>
+          written by <a href="http://lo.epfl.ch/people">Demetri Psaltis and
+            Ioannis Papadopoulos</a>. I can really say that all the work done
+          paid off really well in the end.<br />
+          I am extremely proud of this work for many reason but one of them is
+          surely the fact that, in the end, the experimental apparatus is
+          extremely simple. There are many cases where a complex and
+          technologically advance system is required to perform a measurement.
+          But I always found a lot more gratification in those rare occasion
+          where you can exploit your idea with just a limited amount of
+          components on the table.<br />
+          For a quick overview of the results presented in the paper you can
+          look at our <a href="papers/Nature2012-Pressrelease_EN.pdf">press
+            release</a> or, if you feel braver, you can read the <a href="papers/Nature2012.pdf">full
+            paper</a>.<br />
+          <br />
+          <span style="font-weight: bold;">23 October 2012</span><br />
+          This week I was visiting <a href="http://emps.exeter.ac.uk/physics-astronomy/staff/wlbarnes">Prof.
+Bill
+            Barnes</a> and the <a href="http://emps.exeter.ac.uk/physics-astronomy/research/emag/">Electromagnetic
+and
+            Acoustic Materials group</a> at the <a href="http://www.exeter.ac.uk/">University
+            of Exeter</a>. Beside having a lot of extremely interesting
+          scientific discussion and a very good time, I also gave a seminar
+          entitled "Imaging of a hidden object".<br />
+          <br />
+          <span style="font-weight: bold;">20 August 2012</span><br />
+          Today I was visiting <a href="http://www.eng.yale.edu/caolab/">Prof.
+            Hui Cao and her group at Yale University</a>. It was an extremely
+          pleasant visit and I had occasion to discuss with many people  and
+          learn a lot. While I was there I also gave a seminar entitled
+          "Non-invasive imaging through opaque scattering layers" at the Applied
+          Physics Department.<br />
+          <br />
+          <span style="font-weight: bold;">18 August 2012</span><br />
+          Today I visited <a href="http://www.bu.edu/nano/">Prof. Luca Dal
+            Negro</a> and his group at Boston University. Most of the students
+          were on holidays, but I had a long and interesting discussion with
+          Luca that hopefully was the beginning of a proficuous collaboration. <br />
+          <br />
+          <span style="font-weight: bold;">15 August 2012</span><br />
+          Today I gave a talk at the <a href="http://spie.org/x30491.xml">SPIE
+            Optics+Photonics</a> conference in San Diego. It was in a session on
+          <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x10913&amp;redir=x10913.xml&amp;conference_id=983811&amp;event_id=896191&amp;programtrack_id=983978">the 
+optical
+            properties of nanostructures</a> and was entitled "Measuring
+          transport channels of disordered materials".<br />
+          <br />
+          <span style="font-weight: bold;">14 August 2012</span><br />
+          Today I gave two talks at the <a href="http://spie.org/x30491.xml">SPIE
+            Optics+Photonics</a> conference in San Diego. The first (in the
+          morning) was in a session on <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x12769&amp;redir=x12769.xml&amp;conference_id=982172&amp;event_id=896194&amp;programtrack_id=982156">unconventional
+            imaging</a> and was entitled "Looking through an opaque screen". The
+          second (in the afternoon) was in a session about <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x12769&amp;redir=x12769.xml&amp;conference_id=982557&amp;event_id=896194&amp;programtrack_id=982575">scattering
+from
+            surfeaces</a> and was entitled "Coherent backscattering cone from
+          superdiffusive media".<br />
+          <span style="font-weight: bold;"><br />
+            26 June 2012</span><br />
+          I was invited to give a talk at the workshop <span style="font-style: italic;">Light
+            transport and nano-optics in random media</span> organized by <a href="http://www.kcl.ac.uk/nms/depts/physics/people/Academic/Sapienza/index.aspx">Riccardo
+            Sapienza</a> at the <a href="http://www.kcl.ac.uk/index.aspx">King's
+            College</a> (London, UK), where I spoke about "<span style="font-style: italic;">Non-invasive
+            imaging through opaque scattering layers</span>".<br />
+          <br />
+          <span style="font-weight: bold;">04 May 2012</span><br />
+          Some time ago I was interviewed by Jon Cartwright, a journalist from <a
+            href="http://physicsworld.com/">Physics World</a>, for a review
+          article about various optical methods to get a very high resolution in
+          microscopy. The article feature work from many different groups (not
+          only COPS) but our results on <a href="papers/PRL2011.pdf">scattering
+            lenses</a> are described in some details. If you are a <a href="http://www.iop.org/">IOP</a>
+          member you can see the article on the May issue. Otherwise you can
+          find a pdf copy of it <a href="papers/outside/Defeating%20diffraction.pdf">here</a>.<br />
+          <br />
+          <span style="font-weight: bold;">10 Apr 2012</span><br />
+          All the three talks I submitted to <a href="http://spie.org/x30491.xml">SPIE
+            Optics+Photonics</a> (San Diego, California, USA, from the 12th to
+          the 16th of August) were accepted! For some miracle they do not even
+          superimpose.<br />
+          SPIE includes a large number of conferences and a even higher number
+          of sessions. If you want to find me here are the details:<br />
+          <br />
+          <span style="text-decoration: underline;">Conference</span>: <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x12769&amp;redir=x12769.xml&amp;conference_id=982172&amp;event_id=896194&amp;programtrack_id=982156">Unconventional
+Imaging
+            and Wavefront Sensing VIII</a> <br />
+          <span style="text-decoration: underline;">Session</span>: Novel
+          Systems I (Tuesday 14 August) <br />
+          <span style="text-decoration: underline;">Title</span>: <span style="font-style: italic;">Looking
+            through an opaque screen</span> <br />
+          <span style="text-decoration: underline;">Authors</span>: Jacopo
+          Bertolotti, Univ. Twente (Netherlands) and Univ. Florence (Italy);
+          Elbert van Putten, Univ. Twente (Netherlands); Ad Lagendijk, AMOLF
+          (Netherlands); Willem Vos, Allard Mosk, Univ. Twente (Netherlands) <br />
+          <span style="text-decoration: underline;">Abstract</span>: We present
+          a novel method that allow us to image a object hidden behind a
+          strongly scattering layer without any need for an access on the back
+          side. We experimentally validate our technique retrieving a high
+          resolution picture of a fluorescent nanostructure placed behind a
+          strongly scattering diffuser layer.<br />
+          <br />
+          <span style="text-decoration: underline;">Conference</span>: <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x12769&amp;redir=x12769.xml&amp;conference_id=982557&amp;event_id=896194&amp;programtrack_id=982575">Reflection,
+Scattering,
+            and Diffraction from Surfaces II</a> <br />
+          <span style="text-decoration: underline;">Session</span>: Optical
+          Properties: Theory and Measurement (Tuesday 14 August) <br />
+          <span style="text-decoration: underline;">Title</span>: <span style="font-style: italic;">Coherent
+            backscattering cone from superdiffusive media</span> <br />
+          <span style="text-decoration: underline;">Authors</span>: Jacopo
+          Bertolotti, Univ. Twente (Netherlands) and Univ. Florence (Italy);
+          Matteo Burresi, European Lab. for Non-linear Spectroscopy (Italy);
+          Vivekananthan Radhalakshmi, European Lab. for Non-linear Spectroscopy
+          (Italy) and Univ. Florence (Italy); Romolo Savo, European Lab. for
+          Non-linear Spectroscopy (Italy); Kevin Vynck, European Lab. for
+          Non-linear Spectroscopy (Italy) and Univ. Florence (Italy); Diederik
+          S. Wiersma, European Lab. for Non-linear Spectroscopy (Italy) <br />
+          <span style="text-decoration: underline;">Abstract</span>: We perform
+          coherent backscattering cone measurements on strongly inhomogeneous
+          and fractal-like materials (Lévy glasses) that are known to support
+          superdiffusive transport of light. We show how interference effects on
+          transport are influenced by the different step length distribution. <br />
+          <br />
+          <span style="text-decoration: underline;">Conference</span>: <a href="http://spie.org/app/program/index.cfm?fuseaction=conferencedetail&amp;export_id=x30628&amp;ID=x10913&amp;redir=x10913.xml&amp;conference_id=983811&amp;event_id=896191&amp;programtrack_id=983978">Nanoengineering:
+Fabrication,
+            Properties, Optics, and Devices IX</a> <br />
+          <span style="text-decoration: underline;">Session</span>: Engineered
+          Nanostructures for Macro Properties (Wednesday 15 August) <br />
+          <span style="text-decoration: underline;">Title</span>: <span style="font-style: italic;">Measuring
+            transport channels of disordered materials</span> <br />
+          <span style="text-decoration: underline;">Authors</span>: Jacopo
+          Bertolotti, Univ. Twente (Netherlands) and Univ. Florence (Italy);
+          Duygu Akbulut, Sebastianus Goorden, Hasan Yilmaz, Willem Vos, Allard
+          Mosk, Univ. Twente (Netherlands) <br />
+          <span style="text-decoration: underline;">Abstract</span>: As light
+          propagates through a disordered material, fields in various incident
+          free space modes are mixed by scattering to generate the transport
+          channels, linear combinations of incident modes that pass through the
+          system. We aim to measure and address individual transport channels in
+          disordered structures. For this purpose, we combine wavefront shaping
+          methods and interferometric detection. Investigating light transport
+          at the single channel level enables in depth study of interference
+          effects and can be used to detect absorption or localization in the
+          system.<br />
+          <span style="font-weight: bold;"><br />
+            15 Mar 2012</span><br />
+          Article <span style="font-style: italic;">"Weak Localization of Light
+            in Superdiffusive Random Systems"</span> published in Physical
+          Review Letters. <a href="papers/PRL2012.pdf">(pdf)</a><br />
+          This paper was both selected for a Synopsis on "<a href="http://physics.aps.org/synopsis-for/10.1103/PhysRevLett.108.110604">Physics
+-
+            spotlighting exceptional research</a>" and tagged as "<a href="http://prl.aps.org/edannounce/PhysRevLett.98.010001">Editors'
+            Suggestion</a>" by the Americal Physical Society.<br />
+          <br />
+          <span style="font-weight: bold;">13 Mar 2012</span><br />
+          <img align="left" src="images/optical_properties_of_photonic_structures_cover.jpg"
+            alt="book cover" style="width: 180px; height: 257px;" />The book <span
+            style="font-style: italic;">"Optical Properties of Photonic
+            Structures: Interplay of Order and Disorder"</span> is ready and
+          will be soon available. For more information on the release date refer
+          to the <a href="http://www.crcpress.com/product/isbn/9781439871911">publisher
+            page</a>. <br />
+          This book deals with the complicate problem of how disorder affects
+          photonic structures and how we can turn disorder from a nuisance to a
+          resource when we fabricate functional optical materials. This is a
+          relatively new field and the literature on this subject is very
+          scattered.<br />
+          This is not a monograph but more a collection of essays where a lot of
+          the major contributors to the field (with some surprising exception)
+          describe the forefront of the scientific research they have done on
+          the subject.<br />
+          In this book I co-authored (together with Kevin Vynck, Pierre
+          Barthelemy and Diederik S. Wiersma) the chapter <span style="font-style: italic;">"Superdiffusion
+            of light in Lévy glasses"</span>.<br />
+          <br />
+          <br />
+          <br />
+          <span style="font-weight: bold;">04 Oct 2011</span><br />
+          A tutorial on Digital Holography is now available on the <a href="tutorials.html">Tutorials</a>
+          page.<br />
+          <br />
+          <span style="font-weight: bold;">27 Sep 2011</span><br />
+          <img align="left" src="images/MesaPlus.jpg" alt="MESA + logo" style="width: 200px; height: 88px;" />Today
+          I had a talk at the annual <a href="http://www.utwente.nl/mesaplus/events/mesa_meeting/">MESA+
+            meeting</a> day. The <a href="http://www.utwente.nl/mesaplus/">MESA+
+            institute</a> includes <a href="http://www.utwente.nl/mesaplus/participating_research_groups/">28
+            groups</a> that do research on Nanotechnology.<br />
+          Nanotechnology is a very broad term and thus you can find groups
+          working on Nanophotonics, Biophysics, Fluid physics, Nanoelectronics
+          etc. As a result in a meeting that put all of them together you are
+          bound to encounter a lot of science that is new to you.<br />
+          The downside is, of course, that you will not understand a large part
+          of it. But the upside is that you can get exposed to a lot of
+          different things making such a meeting a very good occasion to have
+          new ideas. Another very big upside is that, being a local meeting, all
+          those people work relatively close to me and thus it is easy to start
+          collaboration that can actually work out.<br />
+          <br />
+          <span style="font-weight: bold;">19 Sep 2011</span><br />
+          The tutorials on random walks and on Lévy flights are now linked also
+          from the <a href="http://cops.nano-cops.com/?q=node/628">COPS website</a>.
+          A new tutorial on Digital Holography is under preparation.<br />
+          <br />
+          <span style="font-weight: bold;">30 Aug 2011</span><br />
+          Added a few links to the link page.<br />
+          <br />
+          <span style="font-weight: bold;">25 Aug 2011</span><br />
+          First two tutorials included.<br />
+          <br />
+          <span style="font-weight: bold;"> 25 Aug 2011</span><br />
+          This website is on-line!<br />
+          <br />
+        </div>
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+            <li>Skype: j_bertolotti</li>
+          </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+  </body>
+</html>

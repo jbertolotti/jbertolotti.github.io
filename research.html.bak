@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Jacopo Bertolotti research</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Jacopo Bertolotti<br />
+        </h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="cv.html">About me</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="tutorials.html">Tutorials</a></li>
+          <li><a href="collaborations.html">Collaborations</a></li>
+          <li><a href="links.html">Links</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left"> I am interested in most transport phenomena,
+          especially about wave transport and how scattering and disorder effect
+          it. Since I am an experimentalist, and every experimentalist needs to
+          specialize a bit, I mostly focus my research on light transport in
+          disordered media.<br />
+          <br />
+          <h2>Current Interests</h2>
+          <span style="font-weight: bold;">Imaging in biological systems:</span>
+          Scattering is a huge problem for non-invasive optical imaging in
+          biological systems, as scattering from the inhomogeneities in the
+          tissue often limit microscopy to the surface of the sample or (at
+          best) to a shallow depth. Optical imaging through a strongly
+          scattering system is currently an unsolved problem, but in recent
+          years several possible approaches were put forward. The line of
+          research I follow is based on the idea that multiple scattered light
+          possesses non-trivial correlations, which can be exploited to extract
+          information from beyond a scattering material.<br />
+          <strong>Analogue computation using light:</strong> Nowadays we are
+          used to the idea that <em>computation</em> is synonymous with <em>digital
+            computers</em>, but it wasn't always like that. Analogue computers
+          had a very important role until a few decades ago. Modern
+          technological developments, like the introduction of fast and reliable
+          spatial light modulators, allow us to control light propagation to a
+          degree that was unthinkable just a few years ago, opening the
+          possibility to a revival of analogue computation (or at least hybrid
+          analogue-digital computation) using light to perform selected tasks at
+          the speed of light.<br />
+          <strong>Light scattering in correlated systems:</strong> describing
+          transport in a disordered environment is a complicated task, so it is
+          no surprise that some simplifying assumptions are made. The most
+          common of these assumptions is that the <em>disorder</em> can be
+          modeled as white noise, i.e. all the correlations are neglected. But
+          if we look around us most of what we see definitively does not show a
+          <em>crystalline</em>  kind of order and periodicity, but it is not
+          even white noise.<br />
+          <br />
+          <h2>Past interests (that resurface quite often)</h2>
+          <strong>Anderson localization:</strong> When light scattering gets so
+          strong that successive scattering event can not be treated as
+          independent anymore, interference between different possible paths
+          become dominant and the system has a phase transition from a <em>conductive</em>
+          (diffusive) regime to a <em>localized</em> regime where
+          diffusion-like transport is impossible. This regime is known as
+          Anderson localization. There is a heated debate if Anderson
+          localization of light in 3D is even possible at all, but even <br />
+          <h2>Anderson Localization<br />
+          </h2>
+          <img align="left" alt="localized mode" src="images/localized_mode.jpg"
+            style="width: 238px; height: 250px;" />Propagation in disordered
+          media is characterized by multiple scattering. If the disorder is weak
+          the transport can be usually  described  in terms of a diffusion
+          process.<br />
+          For the transport of waves (in our case light) this  results in a
+          system with speckle-like extended eigenmodes. If the amount of
+          disorder is increased the system become more and more diffusive but,
+          contrary to the case of incoherent transport, this behavior does not
+          continue indefinitely. In fact, when the disorder become bigger than a
+          certain threshold, there is a phase transition to a transport regime
+          where the eigenmodes are exponentially localized and thus no
+          diffusion-like transport is possible.<br />
+          This regime, named Anderson Localization after P.W. Anderson who fist
+          predicted it, is characterized by a very low mobility (only tunneling
+          between spatially separated modes is possible) and is the subject of
+          intense research since more than 30 years.<br />
+          <br />
+          <h2>Anomalous transport, Lévy Flights and Superdiffusion<br />
+          </h2>
+          <img align="left" src="images/brown_plus_levy.png" alt="comparison between a brownian and a levy motion"
+            style="width: 238px; height: 200px;" />In the textbook case of
+          normal diffusion, particle transport is described as a random walk to
+          which all the steps give the same contribution (Brownian motion, black
+          curve in the picture on the left). Superdiffusion occurs when the
+          transport is dominated by a few very large steps (Lévy flights, red
+          curve in the picture on the left). In this regime the variance of the
+          step length distribution diverges and the mean square displacement
+          grows faster than linear with time.<br />
+          Turbulent media or composite structures (such as biological tissues,
+          rock strata or clouds formations) can give rise to very long-range
+          correlated disorder with large fluctuations. Also complex and
+          non-linear media are known to produce wild oscillations. In all these
+          cases the probability to perform a very large step becomes
+          non-negligible and superdiffusion ensues.<br />
+          Superdiffusion is known to play an important role in very diverse
+          fields like Ethology, Economy, Geology, Astrophysics, Plasma physics
+          etc. but is still poorly understood.<br />
+          Light superdiffusion offers one of the few experimental system that
+          can be reliably reproduced in the laboratory.<br />
+          <h2>Wavefront shaping<br />
+          </h2>
+          <img vspace="0" hspace="0" align="left" src="images/Vellekoop_Mosk_2008_schematic_en_after.thumbnail.jpg"
+            alt="wavefront shaping" style="border: 0px solid ; width: 150px; height: 143px;" />The
+response
+          of a disordered material to an excitation (e.g. a ray of light) might
+          be complex but it is nevertheless deterministic and, if absorption is
+          negligible, linear. An important consequence of this fact is that,
+          shaping the incident light in both amplitude and phase, it is possible
+          to control the output (e.g. the transmitted light).<br />
+          This allows for an unprecedented ability to control the propagation of
+          light <span style="font-style: italic;">inside</span> a disordered
+          medium and thus to characterize the transport properties of even the
+          most complex media.<br />
+          <br />
+          <br />
+        </div>
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+            <li>Skype: j_bertolotti</li>
+          </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+    <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-8075955-2']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script> </body>
+</html>
