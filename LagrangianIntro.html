@@ -1,0 +1,96 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Bertolotti Group</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <!-- -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <!-- -->
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Optics of disordered systems group<br /></h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <h2>A brief introduction to Lagrangian mechanics<br /></h2>
+          Disclaimer: what follows assumes familiarity with both Newtonian mechanics, and with calculus (we are going to use the chain rule <b>a lot</b>). This is also no substitute for a proper textbook, as we will skip over a lot of details.
+            <br /><br />
+            The first question we need to answer before we even start thinking about Lagrangian mechanics is: "who cares?"
+            After all, using Newton's laws of motion you can solve every mechanical system, so why bother?<br />
+            The point is that you can, but it is not always easy (nor convenient) to do so. In particular Newton's laws are a bit of a headache every time you have constraints. To see it let's consider a simple example: point mass, constrained to slide without friction on a parabolic guide, under the effect of a uniform gravitational field. There are 2 forces acting on the mass:<br />
+            1. The gravitational force.<br />
+            2. The reaction of the constraint.<br />
+            The force due to the constraint has two parts:<br />
+            2.1 The reaction to the gravitational force.<br />
+            2.2 The (centripetal) reaction of the constraint to the motion of the mass, keeping the mass always on the parabolic guide.
+            \[F_1 = - m g \hat{z}~;~F_{2.1}= (F_1\cdot\hat{n})\hat{n}~;~F_{2.2}=\frac{m v^2 }{R}\hat{n}\]
+            Where \(m\) is the mass, \(v\) its velocity, \(g\) the gravity acceleration, \(\hat{n}\) the normal to the parabolic guide (i.e. the constraint), and \(R\) the radius of curvature of the parabolic guide.<br />
+            (If you are not familiar with the lastforce, it is because you only ever saw examples where the guide is straight, so \(R\) is infinite.)<br />
+            Is this solvable? Of course it is! But having to keep track of both the normal vector and the radius of curvature is annoying, and makes the calculations way more complicated than necessary.<br />
+            Can we do any better?<br /><br />
+            As a first (not yet very useful) step, we notice that in Cartesian coordinates, the \(i\)th component of the force can be rewritten in terms of the derivative with respect of time and the velocity in the \(i\)th direction of the kinetic energy \(T\):
+            \[F_i = m \ddot{x}_i=\frac{d}{dt} m \dot{x}_i=\frac{d}{dt} \frac{\partial}{\partial \dot{x}_i} \left( \frac{m}{2} \dot{x}_i^2 \right)=\frac{d}{dt} \frac{\partial T}{\partial \dot{x}_i} . \]
+            The actually smart trick we are going to use here is to realize that we don't really care about the motion along all the Cartesian coordinates, we only care about the motion along a smaller set of coordinates (as some degrees of freedom are taken away by the constraints). In our case for instance we only care about the motion of the mass along the parabolic guide.
+            We call these new coordinates \(q_j\), and now we want to write an equivalent of the formula connecting the forces and the kinetic energies, but this time we want it to depend on the new coordinates \(q_j\):
+            \[\frac{d}{dt} \frac{\partial T}{\partial \dot{q}_j} = \frac{d}{dt} \frac{\partial}{\partial \dot{q}_j} \sum_i \frac{m_i}{2} \dot{x}_i^2  = \frac{d}{dt} \sum_i m_i \dot{x}_i \frac{\partial \dot{x}_i}{\partial \dot{q}_j} . \]
+            If \(x_i\) does not depend \(\dot{q}_j\), we can use the chain rule again to obtain:
+            \[\frac{\partial \dot{x}_i}{\partial \dot{q}_j}=\frac{\partial}{\partial \dot{q}_j} \sum_k \frac{\partial x_i}{\partial q_k} \dot{q}_k = \sum_k \frac{\partial x_i}{\partial q_k}\frac{\partial \dot{q}_k}{\partial \dot{q}_j}=\frac{\partial x_i}{\partial q_j} ,\]
+            and simplify the equation above, leaving a term that now depends only on the force component along \(q_j\). I.e. we now have an equation of motion that doesn't care at all about the constrain forces. Not bad for a bit of symbol manipulation trickery!
+            \[ \frac{d}{dt} \frac{\partial T}{\partial \dot{q}_j}= \frac{d}{dt} \sum_i m_i \dot{x}_i \frac{\partial \dot{x}_i}{\partial \dot{q}_j}= \frac{d}{dt} \sum_i m_i \dot{x}_i \frac{\partial x_i}{\partial q_j} =\]
+            \[= \sum_i m_i \ddot{x}_i \frac{\partial x_i}{\partial q_j} +\sum_i m_i \dot{x}_i \frac{\partial \dot{x}_i}{\partial q_j} = \sum_i F_i \frac{\partial x_i}{\partial q_j}+ \frac{\partial T}{\partial q_j} .\]
+            <br />
+            It is common to rearrange a bit this result, and it goes under the name of "Lagrange's equation of the first kind":
+            \[\frac{d}{dt} \frac{\partial T}{\partial \dot{q}_j} - \frac{\partial T}{\partial q_j} =\sum_i F_i \frac{\partial x_i}{\partial q_j} .\]
+            This already solves a lot of our problems with constraints, but it still require us to keep track of all the forces. Can we do better?<br /> <br />
+            We can if the forces are conservative, and thus can be written in terms of a (scalar) potential \(V\). Now we don't even need to keep track of the (vector) forces any more.
+            \[F_i = - \frac{\partial V}{\partial x_i} \Rightarrow \sum_i F_i \frac{\partial x_i}{\partial q_j} = -\sum_i \frac{\partial V}{\partial x_i} \frac{\partial x_i}{\partial q_j} = -\frac{\partial V}{\partial q_j} . \]
+            If the potential \(V\) does not depend on the velocities (i.e. it does not depend on \(\dot{q}_j\)) we can define the Lagrangian \(L=T-V\) and write down our equations of motion in a very compact and elegant form, the Euler-Lagrange equation (of second kind):
+            \[\frac{d}{dt} \frac{\partial T}{\partial \dot{q}_j} - \frac{\partial T}{\partial q_j} = -\frac{\partial V}{\partial q_j} \Rightarrow \frac{d}{dt} \frac{\partial (T-V)}{\partial \dot{q}_j} - \frac{\partial (T-V)}{\partial q_j} = 0 \]
+            \[\Rightarrow \frac{d}{dt} \frac{\partial L}{\partial \dot{q}_j} - \frac{\partial L}{\partial q_j} =0 . \]
+            <br />
+            So, at the price of a few assumptions, and some symbol manipulation, we have now a formulation of Newton's laws that makes much easier to deal with constraints. Obviously the two approaches describe exactly the same Physics, but Lagrangians are often much simpler to deal with.
+            <br /><br />
+            Now is the time to talk about all the dirt we swept under the rug. In particular we made a hidden assumption on the nature of the constraints. Everything we have done work if the constraints are "holonomic". We can informally say that a holonomic constraint is one where the state of the system depends only on the values of its coordinate (plus time), and not on the path it took to arrive there. So our parabolic waveguide was holonomic, but a ball rolling on a plane is not.<br />
+            There are also cases where things still works even though some of the assumptions are violated. E.g. the magnetic force depend on velocity, but all the problematic parts cancel out and we can write a Lagrangian for the Lorentz force.
+        </div>
+      
+
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+         </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+  </body>
+</html>
