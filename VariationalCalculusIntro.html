@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Bertolotti Group</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <!-- -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <!-- -->
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Optics of disordered systems group<br /></h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <h2>A brief introduction to variational calculus<br /></h2>
+          Disclaimer: what follows assumes familiarity with with calculus (in particular the chain rule and integration by parts). This is also no substitute for a proper textbook, as we will skip over a lot of details.
+            <br /><br />
+            The simplest introduction to the calculus of variations is to solve in a slightly roundabout way a very easy geometrical problem: what is the shortest path between 2 points on a plane? (Spoiler: it's a straight line.)<br />
+            Let's pretend we have no idea, and so we are forced to take into consideration all possible functions passing through 2 given points. What we want to do is to calculate the length of each of them, and select the shortest one. (Spoiler: we are not <b>really</b> going to do that.)<br />
+            The length of a curve is given by the integral (between the start and finish points) of the infinitesimal lengths ds. And, since we are on the plane, ds is given by Pythagoras theorem:
+            \[\ell=\int_{x_1}^{x_2} ds \quad ; \quad ds^2= dx^2+dy^2 \, .\]
+            With some we can rewrite ds, and thus the length of the curve, in a more convenient way:
+            \[ds^2= dx^2+dy^2 \rightarrow \left( \frac{ds}{dx} \right)^2=1+ \left( \frac{dy}{dx} \right)^2 \rightarrow ds = \sqrt{1+ \left( \frac{dy}{dx} \right)^2} \, dx \, .\] 
+            What we want to do now is to look over all possible functions that pass from the two points, and select the one with the shortest length. This is impossible to do via brute force, so we are going to "cheat". Imagine that y(x) is the function we are looking for (i.e. our solution). Any function f(x) that we look will be the (unknown) solution y(x) plus a "perturbation" ε η(x), where η(x) is also a function, and ε is a number that tells us how big the perturbation is: \(f(x) = y(x) + \varepsilon \eta(x)\).<br />
+            When you look for the minimum of a function (or functional), what you want to do is to differentiate it, and then look when the derivative is zero. In this case we want to differentiate with respect to ε. Furthermore we know that we will get our solution at ε=0. To make the derivative we make use of the chain rule, and then we set ε=0 (remembering how we defined f(x) ):
+            \[\ell = \int_{x_1}^{x_2} \sqrt{1+f'^2} dx \rightarrow \frac{d\ell}{d\varepsilon} = \int_{x_1}^{x_2} \frac{f'}{\sqrt{1+f'^2}} \frac{d f'}{d \varepsilon} dx \rightarrow \left. \frac{d\ell}{d\varepsilon} \right\rvert_{\varepsilon=0}= \int_{x_1}^{x_2} \frac{y' \eta}{\sqrt{1+y'^2}} dx . \]
+            The next step is (as it is often the case) an integration by parts. The first term is zero because η(x) is zero at both extremes. So also the second term must be zero, and it must be zero for every possible η, meaning that the part in square brackets must be zero too:
+            \[ \left. \frac{d\ell}{d\varepsilon} \right\rvert_{\varepsilon=0}= \left. \frac{y' \eta}{\sqrt{1+y'^2}} \right\rvert_{\varepsilon=0} - \int_{x_1}^{x_2} \eta \left[ \frac{d}{dx} \frac{y'}{\sqrt{1+y'^2}} \right] dx =0 . \]
+            If the derivative of a function is zero, it means that the function itself is a constant. And if we rearrange it, we find that y' is also a constant, meaning that our solution was a straight line after all!
+            \[\frac{d}{dx} \frac{y'}{\sqrt{1+y'^2}}=0 \rightarrow \frac{y'}{\sqrt{1+y'^2}} = \text{constant} \rightarrow y' = \text{constant} .\]
+            This probably feels like an anticlimax, but in solving a problem we already knew the solution of, we stumbled on a quite general way of solving this kind of problems. So let's look again at what we have done! <br /><br />
+            Let's say we want to find the function f that minimizes (or maximizes) the functional I. We can once again pretend that f is the sum of our unknown solution + a perturbation.
+            \[I= \int_{x_1}^{x_2} F(x, f, f') dx \quad \text{with} \quad f(x)= y(x) + \varepsilon \eta(x) . \]
+            To find the minimum (or the maximum) we want to differentiate with respect to ε, and then set ε=0 like we did before:
+            \[ \frac{dI}{d\varepsilon} = \int_{x_1}^{x_2} \left( \frac{\partial F}{\partial f} \frac{\partial f}{\partial \varepsilon} + \frac{\partial F}{\partial f'} \frac{\partial f'}{\partial \varepsilon} \right) dx = \int_{x_1}^{x_2} \left( \frac{\partial F}{\partial f} \eta + \frac{\partial F}{\partial f'} \eta' \right) dx . \]
+            We again integrate by parts the second term, and notice that we remain with a term that goes to zero because η is zero at the extremes, and a term that must be zero whatever η is:
+            \[\left. \frac{dI}{d\varepsilon}\right\rvert_{\varepsilon=0} = \eta \, \left. \frac{\partial F}{\partial y'} \right\rvert_{\varepsilon=0} -  \int_{x_1}^{x_2} \eta \left[ \frac{d}{dx} \frac{\partial F}{\partial y'} -\frac{\partial F}{\partial y} \right] dx =0 \]
+            \[\rightarrow \frac{d}{dx} \frac{\partial F}{\partial y'} -\frac{\partial F}{\partial y}=0 , \]
+            which is the differential equation our solution needs to satisfy in order to be the function that minimizes (or maximizes) the functional I.<br />
+            (This differential equation that we found might be familiar to you, as it is exactly the Euler-Lagrange equation that governs the dynamics of classical mechanics systems. We just have to interpret the parameter x as time, and F as the Lagrangian of the system.)<br /><br />
+            A simple but instructive exercise: find the shortest line between two points on a cylinder.<br />
+            Obviously we want to do it in cylindrical coordinates. We can also assume that the axis of the cylinder is aligned with the z coordinate, and that the cylinder has radius R. What is the functional we want to minimize? As we did before we use Pythagoras' theorem to find ds and thus the length of the curve:
+            \[ ds^2=dx^2+dy^2+dz^2 \rightarrow \left( \frac{ds}{d\theta} \right)^2 =\left( \frac{dx}{d\theta} \right)^2+\left( \frac{dy}{d\theta} \right)^2+\left( \frac{dz}{d\theta} \right)^2 \]
+            \[\rightarrow \left( \frac{ds}{d\theta} \right)^2 = \left( R \sin\theta \right)^2 +  \left( R \cos\theta \right)^2 + z'^2 \]
+            \[ \rightarrow ds = \sqrt{R^2 +z'^2} \, d\theta \rightarrow \ell = \int_{\theta_1}^{\theta_2} \sqrt{R^2 +z'^2} \, d\theta \, . \]
+            Since we now know F, we apply the Euler-Lagrange equation we found above, and (lo and behold!) we find that the geodesics on a cylinder looks suspiciously similar to the geodesics on a plane!
+            \[ F = \sqrt{R^2 +z'^2} \rightarrow\frac{d}{d\theta} \frac{\partial F}{\partial z'} -\frac{\partial F}{\partial z} = 0 \rightarrow \frac{d}{d\theta} \frac{\partial F}{\partial z'} =0 \]
+            \[ \frac{\partial F}{\partial z'} = \text{constant} \rightarrow \frac{z'}{\sqrt{R^2 +z'^2}} = \text{constant} \rightarrow z' = \text{constant} . \]
+        </div>
+      
+
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+         </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+  </body>
+</html>
