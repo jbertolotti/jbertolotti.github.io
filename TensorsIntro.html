@@ -1,0 +1,101 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Bertolotti Group</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <!-- -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <!-- -->
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Optics of disordered systems group<br /></h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <h2>A brief introduction to tensors<br /></h2>
+          Disclaimer: what follows assumes familiarity with linear algebra (in particular row-by-column multiplication). This is also no substitute for a proper textbook, as we will be very hand-weavy and skip a lot of details.
+            <br /><br />
+
+            Not sure why, but tensors are often introduced in a very confused way, that makes them look more scary than they actually are.<br />
+            Let's assume you are familiar with matrices (if you aren't, chances are you don't care what a tensor is), so the fact that multiplying rows by columns a row vector with a column vector yields a scalar (i.e. a single number) should be no surprise to you:
+            \[ \begin{matrix} (\bullet & \bullet & \bullet) \\ \\ \end{matrix}
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \bullet \; .
+            \]
+
+            If we make a column of row vectors, we can repeat the process for each of them and put the results also in a column, resulting in the usual multiplication of a matrix by a vector:
+            \[ \begin{pmatrix} (\bullet & \bullet & \bullet) \\ (\bullet & \bullet & \bullet) \\ (\bullet & \bullet & \bullet) \end{pmatrix}
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} \; .
+            \]
+
+            As a convention, we don't write the brackets around all the row vectors we put in a column, so our "matrix" looks a lot like a rectangular (in our case, square) array of numbers. But it is important to keep in mind that it is in fact a column of row vectors:
+            \[ \begin{pmatrix} \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet \end{pmatrix}
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} \; .
+            \]
+
+            As the result of multiplying a row vector with a column vector is a scalar, and the result of multiplying a matrix with a column vector is a column vector, if we multiply a matrix by both a row and a column vector, we get a scalar:
+            \[ \begin{matrix} (\bullet & \bullet & \bullet) \\ \\ \end{matrix} \begin{pmatrix} \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet \\ \bullet & \bullet & \bullet \end{pmatrix}
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \bullet \; .
+            \]
+
+            Now, what happens if, instead of putting our row vectors in a column, we put them in a row? The usual row-by-column rule still applies, the only difference is that  now the result is going to be a row vector:
+            \[ \begin{matrix} \big( (\bullet & \bullet & \bullet) & (\bullet & \bullet & \bullet) & (\bullet & \bullet & \bullet) \big) \\ \\ \end{matrix} 
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \begin{matrix} \\( \bullet & \bullet & \bullet) \\ \\ \end{matrix} \; .
+            \]
+
+            So, the weird object we created  results in a row vector when multiplied by a column vector. In other words, if we want to get a scalar, we need to multiply it with two column vectors, not a row and a column vector like for a matrix:
+            \[ \left[ \begin{matrix} \big( (\bullet & \bullet & \bullet) & (\bullet & \bullet & \bullet) & (\bullet & \bullet & \bullet) \big) \\ \\ \end{matrix} 
+            \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} \right] \begin{pmatrix} \bullet \\ \bullet \\ \bullet \end{pmatrix} = \bullet \; .
+            \]
+
+            This is an example of a "tensor". It is a lot like a matrix, but you need to multiply it by a different number of vectors in order to get a scalar. You can build object that requires multiplication by any number of vectors you want to finally get a scalar. A useful way to classify them is by using two numbers to say how many row/column vectors you need to multiply them by in order to get a scalar. In this language a matrix is a (1,1) tensor, while the weird "row" thing we created would be a (0,2) tensor. What people do is to write them in components. The components of the vector v⃗ are labelled as vᵃ if it is a column vector, and vₐ if it is a row vector, so a row-by-column multiplication for a matrix M will look like
+            \[
+            \vec{u}^T M \vec{v} = \sum_{a,b} u_a M _b^a v^b \; ,
+            \]
+            and the multiplication by two column vectors of our weird "raw thing" tensor (let's call it \(M\) too) will look like
+            \[
+            M \vec{u} \vec{v} = \sum_{a,b}  M _{ab} u^a v^b \; .
+            \]
+            <br />
+            There is of course a <b>LOT</b> more to say about tensors, but this is well beyond the scope of this already too long thread. Point is, tensors are not the scary objects they are often depicted to be. They are a lot like matrices with a few more inputs!
+        </div>
+      
+
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+         </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+  </body>
+</html>
