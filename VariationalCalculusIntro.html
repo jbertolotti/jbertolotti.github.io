@@ -56,7 +56,7 @@
             \[\rightarrow \frac{d}{dx} \frac{\partial F}{\partial y'} -\frac{\partial F}{\partial y}=0 , \]
             which is the differential equation our solution needs to satisfy in order to be the function that minimizes (or maximizes) the functional I.<br />
             (This differential equation that we found might be familiar to you, as it is exactly the Euler-Lagrange equation that governs the dynamics of classical mechanics systems. We just have to interpret the parameter x as time, and F as the Lagrangian of the system.)<br /><br />
-            A simple but instructive exercise: find the shortest line between two points on a cylinder.<br />
+            <b>A simple exercise</b>: Find the shortest line between two points on a cylinder.<br />
             Obviously we want to do it in cylindrical coordinates. We can also assume that the axis of the cylinder is aligned with the z coordinate, and that the cylinder has radius R. What is the functional we want to minimize? As we did before we use Pythagoras' theorem to find ds and thus the length of the curve:
             \[ ds^2=dx^2+dy^2+dz^2 \rightarrow \left( \frac{ds}{d\theta} \right)^2 =\left( \frac{dx}{d\theta} \right)^2+\left( \frac{dy}{d\theta} \right)^2+\left( \frac{dz}{d\theta} \right)^2 \]
             \[\rightarrow \left( \frac{ds}{d\theta} \right)^2 = \left( R \sin\theta \right)^2 +  \left( R \cos\theta \right)^2 + z'^2 \]
@@ -64,6 +64,22 @@
             Since we now know F, we apply the Euler-Lagrange equation we found above, and (lo and behold!) we find that the geodesics on a cylinder looks suspiciously similar to the geodesics on a plane!
             \[ F = \sqrt{R^2 +z'^2} \rightarrow\frac{d}{d\theta} \frac{\partial F}{\partial z'} -\frac{\partial F}{\partial z} = 0 \rightarrow \frac{d}{d\theta} \frac{\partial F}{\partial z'} =0 \]
             \[ \frac{\partial F}{\partial z'} = \text{constant} \rightarrow \frac{z'}{\sqrt{R^2 +z'^2}} = \text{constant} \rightarrow z' = \text{constant} . \]
+            <br /><br />
+            <b>A more complex exercise</b>: Consider an idealized perfectly straight shore, where the water depth \(h\) increase linearly with the distance \(x\) from the shoreline. Knowing that the group velocity of a wave in shallow water is given by \(v_g=\sqrt{g\,h}\) (where \(g\) is the gravity acceleration), at what angle will the waves hit the shore?<br />
+            By Fermat's principle, the path taken by a wave between two given points is the path that can be traveled in the least time. One point will be on the shoreline, and the other can be anywhere in the water, and we want to minimize the time it will take to the wave to go from one to the other, i.e. we want to minimize
+            \[T=\int_{x_1}^{x_2} \frac{ds}{v_g} = \int_{x_1}^{x_2} \frac{\sqrt{1+y'^2} dx}{\sqrt{g\, h}}= \frac{1}{\sqrt{g}}\int_{x_1}^{x_2} \sqrt{\frac{1+y'^2}{x}} dx.\]
+            We now know our \(F\), so we can apply the Euler-Lagrange equation and find
+            \[\frac{d}{dx}\frac{\partial}{\partial y'} \sqrt{\frac{1+y'^2}{x}} - \frac{\partial}{\partial y} \sqrt{\frac{1+y'^2}{x}} =0 \Rightarrow \frac{d}{dx}\frac{\partial}{\partial y'} \sqrt{\frac{1+y'^2}{x}}=0 \]
+            \[\Rightarrow \frac{y'}{\sqrt{x (1+y'^2)}}=\text{constant}=c \Rightarrow y' = c \sqrt{x (1+y'^2)} \]
+            \[\Rightarrow y'= \sqrt{\frac{c^2 x}{1-c^2 x}} \Rightarrow y = \int \sqrt{\frac{c^2 x}{1-c^2 x}} dx . \]
+            To solve this integral we make the substitution \(x=\frac{1-\cos \theta}{2 c^2}\) \(\rightarrow dx = \frac{\sin \theta}{2 c^2} d\theta \):
+            \[y = \int \sqrt{\frac{c^2 \frac{1-\cos \theta}{2 c^2}}{1-c^2 \frac{1-\cos \theta}{2 c^2}}} \frac{\sin \theta}{2 c^2} d\theta = \frac{1}{2c^2}\int \sqrt{\frac{1-\cos\theta }{1+\cos \theta }} \sin\theta d\theta =\]
+            \[= \frac{1}{2c^2}\int \tan \left( \frac{\theta}{2} \right) \sin \theta d\theta = \frac{1}{2c^2}\int \left( 1- \cos \theta  \right) d\theta = \frac{\theta- \sin\theta}{2 c^2} + c_1 , \]
+            where we used the trigonometric identities \(\frac{1-\cos\theta }{1+\cos \theta} = \tan^2 \left( \frac{\theta}{2} \right) \), and \(\tan \left( \frac{\theta}{2} \right)= \frac{1-\cos\theta}{\sin\theta }\) (and \(c_1\) is an integration constant).<br />
+            We now have to find the angle of this curve at \(x=0\):
+            \[\left.\frac{dy}{dx}\right\rvert_{x=0} = \left. \frac{\partial y}{\partial \theta} \left( \frac{\partial x}{\partial \theta}\right)^{-1 } \right\rvert_{\theta=0} = \left. \frac{1-\cos\theta}{2c^2} \left( \frac{\sin\theta}{2c^2}\right)^{-1 } \right\rvert_{\theta=0} = \lim_{\theta\rightarrow 0} (1-\cos\theta)\sin\theta =0 ,
+            \]
+            so all waves (at least in this simplified system) will arrive perpendicular to the shore.
         </div>
       
 
