@@ -1,0 +1,163 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8" />
+    <title>Bertolotti Group</title>
+    <meta content="English" http-equiv="Content-Language" />
+    <link media="screen" href="style.css" type="text/css" rel="stylesheet" />
+  </head>
+  <!-- -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+</script>
+  <!-- -->
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>Optics of disordered systems group<br /></h1>
+        <br />
+        <h2>University of Exeter (UK)</h2>
+      </div>
+      <div id="menu">
+        <ul>
+          <li><a href="index.html">About</a></li>
+          <li><a href="research.html">Research</a></li>
+          <li><a href="people.html">People</a></li>
+          <li><a href="publications.html">Publications</a></li>
+          <li><a href="outreach.html">Outreach</a></li>
+        </ul>
+      </div>
+      <div id="content">
+        <div class="left">
+          <h2>A brief introduction to dice rolling probabilities<br /></h2>
+          Disclaimer: what follows assumes some basic familiarity with probability theory and combinatorics. This is also no substitute for a proper textbook, as we will skip over a lot of details.
+            <br /><br />
+            Dice rolling is common in many games, but especially in Role Playing Games (RPGs) it can get quite complicated, with several dice of different shapes rolled together. In the following we will take a look at how to compute the probability to get a given (desired?) result in a number of common situations. And yes, this is largely an excuse to do a bit of combinatorics.
+            <br /><br />
+
+            <h3>A single die</h3> 
+            A proper axiomatic definition of probability is beyond the scope of this tutorial, but since we are only going to deal with dice rolling, we can get away with a very simple frequentist definition: the probability \(P(A)\) that \(A\) happens, is the ratio between the number of ways \(A\) can happen and the total number of ways anything can happen.<br/>
+            This might look like a weird definition if it is the very first time you encounter it, but it makes sense: the probability to roll a 5 on a 6-face die is the number of ways I can get 5 (just one), divided by the number of ways anything can happen (there are 6 possible outcomes, so 6), i.e. \(P(5)= 1/6\), and since there is only one way to roll a 4, also \(P(4)= 1/6\), and so on. In general, the probability to get any specific roll from a 6-sided die is \(1/6\).<br/>
+            What if we have dice with a different number of faces? Nothing changes. The probability to roll a 5 on a 20-sided die is \(1/20\), the probability to roll a 5 on a 8-sided die is \(1/8\) etc. Notice that everything we said so far is independent on whether a given die can be Physically realized, we just assume that the die is fair (and no, not all number of faces is possible if you want a Physical fair dice).<br/>
+            <br/>
+            <h4>Probability to roll higher/lower than....</h4>
+            What is the probability to roll higher than 3 with a 6-sided die? Using the same approach as before, and noticing that 4, 5, and 6 are the possible rolls higher than 3, we can write:
+            \[
+            P(\#>3)=\frac{\text{number of ways we can roll higher than 3}}{\text{number of ways we can roll}} = \frac{3}{6}=0.5=50\%
+            \]
+            Similarly, the probability to roll higher than 3 with a 12-sided die is:
+            \[
+            P(\#>3)=\frac{\text{number of ways we can roll higher than 3}}{\text{number of ways we can roll}} = \frac{9}{12}=0.75=75\%
+            \]
+            A couple of things to notice:
+            <li>The weird symbol \(\#\) we used is just a placeholder for our, as yet unspecified, roll.</li>
+            <li>We used \(P(\#>3)\) both when we were talking about rolling a 6-sided die and when we were talking about rolling a 12-sided die. This can get confusing, so it is a good idea to always specify what one means. If it is necessary, one can make the notation more complicated to avoid ambiguities, but we will only do that if strictly necessary.</li>
+            <li>The probability to have a result higher than a certain value is known as <i>cumulative probability</i>.</li><br/>
+
+            Also notice that, since the probability that anything happen is always 1, we can do calculations like (e.g. for a 6-sided die)
+              \[
+              P(\#\le3)=1-P(\#>3)=1-0.5=0.5=5\%
+              \]
+              and
+              \[
+              P(\#< 3)=P(\#\le3)-P(\#=3)=0.5-\frac{1}{6}=\frac{3}{6}-\frac{1}{6}=\frac{2}{6} \simeq 0.333 = 33.3\%
+              \]
+            <h3>Multiple (identical) dice</h3>
+            When we roll multiple dice we open ourself to a lot more different possible questions about what kind of result we are interested in. We also need some form of notation to express in a compact form. Thankfully there is a very standard notation we can borrow: \(nDm\) means we roll \(n\) \(m\)-sided dice.<br/>
+            <br/>
+            <h4>Probability to get a given roll exactly once</h4>
+            Let's say we roll \(3D6\) (three 6-sided dice), what is the probability that exactly one is a 6? The number of ways anything can happen is the number of ways we can roll the first die (6), times the number of ways we can roll the second die (also 6), times the number of ways we can roll the third die (6 once again), for a total of \(6\times6\times6=216\). Counting the number of ways we can get exactly one 6 out of three rolls is slightly more complicated: there are 3 ways to choose which die will be the one rolling a 6, one way to choose what this die will roll (i.e. only a 6), and 5 ways each of the other two dice can roll (since neither can roll a 6), resulting in \(3\times1\times5\times5=75\). So we have
+            \[P(\text{one 6 rolling 3D6}) = \frac{75}{216} \simeq 0.347 = 34.7\%\]
+            We can use the same strategy to find the probability to get a given result exactly once on a \(nDm\) roll (i.e. rolling n m-sided dice): the total number of possible rolls is \(m^n\), the number of ways we can choose which die will roll the result we want is \(n\), the number of ways we can choose the roll of this specific die is just 1, the number of ways one of the other die can roll is \(m-1\), and there are \(n-1\) of those. So we finally get
+            \[
+            P(\text{given result exactly once on a }nDm\text{ roll}) = \frac{n\times1\times(m-1)^{n-1}}{m^n}
+            \]
+            (notice that, since all rolls are equiprobable on a fair die, which specific result you are looking for is irrelevant for the calculation of the probability.)<br/>
+            <br/>
+
+            <h4>Probability to get a given roll at least once</h4>
+            This problem looks very similar to the previous one, but it is instructive because there is a very common trick to make the calculation much simpler, based on the idea that the probability the something happen plus the probability of its negation must add to exactly 1. So, since we want the probability to get a given roll <i>at least</i> once, we can obtain ite as 1 minus the probability we never got any:
+            \[
+            P(\text{at least once})=1-P(\text{never}) = 1 -\left(\frac{m-1}{m}\right)^n \; .
+            \]
+            <h4>Probability to get a given roll exactly <i>k</i> times</h4>
+            In some games the degree of success is decided by how many times you get a given result when rolling multiple dice. To find the probability we get a given result exactly \(k\) times when rolling \(nDm\), we can use a similar approach to the one we used to calculate the probability to get the result exactly once, but this time we need the number of ways we can choose which \(k\) dice among the \(n\) we rolled got the result we want, and to do that we need to start talking about combinatorics.
+            <h5>Combinatorics basics</h5>
+            <li>If there are \(a\) ways for \(A\) to happen, and \(b\) ways for \(B\) to happen, there are \(a\times b\) ways for \(A\) and \(B\) together to happen. Therefore, there are 6 ways for a 6-sided die to roll, but \(6 \times 6=36\) ways to roll 2 6-sided dice. In general, there are \(m^n\) ways to roll \(n\) \(m\)-sided dice.</li>
+            <li>The number of ways we can shuffle \(n\) items (cards in a deck, rolls of a number of dice etc.) can be calculated as follows: the first item can be chose among \(n\) options, now that the first one is fixed the second item can be chosen among \(n-1\) options, the third among \(n-2\) options, and so on until the last item can only be the only one left. So the number of possible ways we can shuffle \(n\) items is \(n\times(n-1)\times(n-2)\times\ldots\times 1\). This operation (take an integer number and multiply it by all the integer numbers smaller than it) is common enough to have a name: the <i>factorial</i> \(n!\) (we are going to use this notation a lot below).</li>
+            <li>The number of ways we can select \(k\) items among \(n\) possibilities can be calculated as follows: the first item can be chose among \(n\) options, now that the first one is fixed the second item can be chosen among \(n-1\) options, the third among \(n-2\) options, and so on until we have selected all our \(k\) items. So the number of <i>permutations</i> of \(k\) items among \(n\) possibilities is</li>
+            \[n\times(n-1)\times\ldots(n-k)=\frac{n!}{(n-k)!}\]
+            <li>If we do not care about the order of the \(k\) items we are picking (as it is often the case), the formula for the number of permutations overcounts the number of ways we can select our items, as all ways of picking them up that is the same up to a reshuffling count as 1. Since there are exactly \(k!\) ways to shuffle \(k\) items, the number of <i>combinations</i> (i.e. the number of permutations where we do not care about the order) is \(\frac{n!}{k!(n-k)!}\). Notice that this can be interpreted as the number of ways we can split a group of \(n\) items into a group of \(k\) items and a group of \((n-k)\) items (when we do not care about the exact arrangement, but only about which item is where).</li>
+            <br/>
+            <h5>The binomial distribution</h5>
+            We are now ready to find the probability to get a given roll exactly \(k\) times when rolling \(nDm\). Let's call the probability that a roll has exactly the result we want \(p\) (which will usually equal to \(1/m\) for a fair dice): the probability to get the roll we want \(k\) times is \(p^k\), the probability that the other \(n-k\) rolls are NOT the one we want is \((1-p)^{n-k}\), and the number of ways we can get \(k\) items (rolls) out of \(n\) is \(\frac{n!}{k!(n-k)!}\), resulting in a probability to get exactly \(k\) times the roll we want out of \(n\) dice equal to
+            \[P_n(k)=\frac{n!}{k!(n-k)!} (p)^k (1-p)^{n-k} .\] 
+            This is known as the <i>binomial distribution</i> and it appears everywhere when dealing with the probability of discrete events (like dice rolls).<br/>
+            <br/>
+            <h4>Probability that \(n\) dice sum to exactly \(s\)</h4>
+            This is a more complex, but very common problem. E.g., if you ever played Dungeons&Dragons, you had to roll \(3D6\) and sum them to obtain the value of your statistics (Strength, Intelligence etc.) You probably intuitively know that getting a 3 or a 18 when rolling \(3D6\) is a lot less likely than getting an average value like 10 or 11, but quantifying this exactly requires a bit of work, and the introduction of a new concept.<br/>
+            <h5>The probability-generating function</h5>
+            Assume there is a random event you know the probability distribution of, e.g. you know that the probability to get a given result on a fair die is the same for all results and is \(p_i=1/m\). The <i>probability-generating function</i> is defined to be
+            \[ G(x) = \sum_i p_i \, x^i \; ,  \]
+            so (e.g.) the probability-generating function for the rolling of a 6-sided die is \(G(x) = \frac{1}{m}(x+x^2+x^3+x^4+x^5+x^6)\).<br/>
+            So, why did we bother to define such a strange mathematical object? The point is that the properties of exponentials makes it very easy to deal with sums of random events. To see how consider two random events, one where each outcome \(i\) has a probability \(p_i\), and one where the outcome \(j\) has probability \(p_j\). Calculating directly the probability of \(i+j\) is possible but complicated, while we can use the fact that \(x^{i+j}= x^i x^j\) to write
+            \(G_{i+j}(x)=G_i(x)\,G_j(x)\). So the probability-generating function that \(3D6\) sum exactly to \(S\) is 
+            \[
+            G_S(x)=G_{1D6}(x) \times G_{1D6}(x) \times G_{1D6}(x) = \frac{(x+x^2+x^3+x^4+x^5+x^6)^3}{6^3} \; ,
+            \]
+            and the probability to get exactly the sum \(S\) is the coefficient of the \(x^S\) term in \(G_S(x)\).<br/><br/>
+            <h4>Probability to get a sum \(S\) when rolling \(n\) \(m\)-sided dice and keeping the \(k\) highest ones</h4>
+            This is the hardest problem we will deal with here, and it is one that is very common in many Role-Playing Games. E.g. in Dungeons&Dragons when you roll with <i>advantage</i> you roll twice and keep the highest die, or a common method to roll the character statistics is to roll \(4D6\) and keep the 3 highest (which, on average, lead to higher scores than simply roll \(3D6\)).<br/>
+            Let's call \(l\) the smallest value among the \(k\) highest dice, \(i\) the number of dice that rolled less than \(l\), and \(j\) the number of dice that rolled exactly \(l\) (which means that \(n-i-j\) dice rolled more than \(l\)).<br/>
+            If \(i+j=n\), there are no dice that rolled higher than \(l\), but since \(l\) is the lowest roll of the \(k\) highest, the only option is that all those \(k\) dice rolled exactly \(l\), and they sum to exactly \(l\times k\).<br/>
+            If \(i+j< n\) (\(i+j\) can't be larger than \(n\)), then \(k-(n-i-j)\) dice rolled exactly \(l\), and sum to \(l\times(k-(n-i-j))\), and the rest of the \(k\) highest dice rolled higher than \(l\). So the number of ways we can get the highest \(k\) dice to sum to \(S\) is the number of ways \(n-i-j\) dice can sum to exactly \(S-l*(k-(n-i-j))\), keeping in mind that these dice can only have results between \(l\) and \(m\). We call this \(N\), and using the probability-generating function discussed above we can see that it is the coefficient of the \(x^{S-l*(k-(n-i-j))}\) term of \((x^l+x^{l+1}+\ldots+x^m)^{n-i-j}\). <br/>
+            The number of ways we can separate \(n\) dice into a group of \(i\) elements, a group of \(j\) elements, and a group of \(n-i-j\) elements is \(\frac{n!}{i! j! (n-i-j)!}\), and there are \((l-1)^i\) ways to choose the values of the \(i\) dice that are smaller than \(l\). So, we can put all the piece together to find the probability to get a sum \(S\) when rolling \(n\) \(m\)-sided dice and keeping the \(k\) highest ones:
+            \[
+            P(S) = \frac{1}{m^n}\sum_{i,j,l} \frac{n!}{i! j! (n-i-j)!} (l-1)^i \; N \; .
+            \]
+            There are still a few steps before we are done. First of all, if \(l=1\), then there is no way a die can roll lower than \(l\), and thus \(i=0\). In this case the number ways to choose the values of the \(i\) dice that are smaller than \(l\) is <b>not</b> \((l-1)^i\) (which would give us an indeterminate \(0^0\)), but just 1. The second missing step is that we haven't specified yet over what range \(i\), \(j\), and \(l\) should be summed over:
+            <li>\(l\) can range from 1 to \(m\)</li>
+            <li>\(i\) can range from 0 (if no dice rolled less than \(l\)) to \(n-k\) (if all the dice that were not among the \(k\) highest rolled lees than \(l\))</li>
+            <li>Of the \(n\) dice, \(i\) surely rolled less than \(l\), so the maximum value \(j\) can take is \(n-i\). To find the minimum possible value of \(j\), we notice that \(n-k\) is the number of dice that are not among the \(k\) highest, and thus \(n-k-i\) is the number of dice that are \(\ge l\), but not among the \(k\) highest (the case where \(i+j=n\) was already dealt with separately). Since at least one die must be equal to \(l\) and among the \(k\) highest, the minimum possible value for \(j\) is \(n-k-i+1\).</li>
+            <br/>
+            So we finally get:
+            \[
+            P(S) = \frac{1}{m^n}\sum_{l=1}^{m} \sum_{i=0}^{n-k} \sum_{j=n - k - i + 1}^{n-i} \frac{n!}{i! j! (n-i-j)!} (l-1)^i \; N \; ,
+            \]
+            (keeping in mind our definition of \(N\), and the fact that the \(i+j=n\) and \(l=1\) cases need to be dealt with separately).
+
+
+
+
+
+
+
+
+
+
+
+        </div>
+      
+
+        <div class="right">
+          <h2>Contact details :</h2>
+          <ul>
+            <li>Postal address:<br />
+              University of Exeter<br />
+              Physics building<br />
+              Stocker Road<br />
+              Exeter<br />
+              EX4 4QL<br />
+              United Kingdom</li>
+            <li>E-mail: <a href="mailto:j.bertolotti@exeter.ac.uk">j.bertolotti@exeter.ac.uk</a></li>
+         </ul>
+        </div>
+        <div style="clear: both;"> </div>
+      </div>
+      <div id="bottom"> </div>
+      <div id="footer"> Copyright 2011 Jacopo Bertolotti            CSS by <a target="_blank"
+          href="http://www.free-css-templates.com/">Free CSS Templates</a> </div>
+    </div>
+  </body>
+</html>
