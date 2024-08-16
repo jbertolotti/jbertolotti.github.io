@@ -39,7 +39,7 @@
             <h3>A single die</h3> 
             A proper axiomatic definition of probability is beyond the scope of this tutorial, but since we are only going to deal with dice rolling, we can get away with a very simple frequentist definition: the probability \(P(A)\) that \(A\) happens, is the ratio between the number of ways \(A\) can happen and the total number of ways anything can happen.<br/>
             This might look like a weird definition if it is the very first time you encounter it, but it makes sense: the probability to roll a 5 on a 6-face die is the number of ways I can get 5 (just one), divided by the number of ways anything can happen (there are 6 possible outcomes, so 6), i.e. \(P(5)= 1/6\), and since there is only one way to roll a 4, also \(P(4)= 1/6\), and so on. In general, the probability to get any specific roll from a 6-sided die is \(1/6\).<br/>
-            What if we have dice with a different number of faces? Nothing changes. The probability to roll a 5 on a 20-sided die is \(1/20\), the probability to roll a 5 on a 8-sided die is \(1/8\) etc. Notice that everything we said so far is independent on whether a given die can be Physically realized, we just assume that the die is fair (and no, not all number of faces is possible if you want a Physical fair dice).<br/>
+            What if we have dice with a different number of faces? Nothing changes. The probability to roll a 5 on a 20-sided die is \(1/20\), the probability to roll a 5 on a 8-sided die is \(1/8\) etc. Notice that everything we said so far is independent on whether a given die can be Physically realized, we just assume that the die is fair.<br/>
             <br/>
             <h4>Probability to roll higher/lower than....</h4>
             What is the probability to roll higher than 3 with a 6-sided die? Using the same approach as before, and noticing that 4, 5, and 6 are the possible rolls higher than 3, we can write:
@@ -63,6 +63,144 @@
               \[
               P(\#< 3)=P(\#\le3)-P(\#=3)=0.5-\frac{1}{6}=\frac{3}{6}-\frac{1}{6}=\frac{2}{6} \simeq 0.333 = 33.3\%
               \]
+            <h5>A few common cases</h5>
+            Rolling a single 6-sided die
+            <table id="table1"><thead>
+              <tr>
+                <th>#</th>
+                <th>1</th>
+                <th>2</th>
+                <th>3</th>
+                <th>4</th>
+                <th>5</th>
+                <th>6</th>
+              </tr></thead>
+            <tbody>
+              <tr>
+                <td>P(#)</td>
+                <td>16.6%</td>
+                <td>16.6%</td>
+                <td>16.6%</td>
+                <td>16.6%</td>
+                <td>16.6%</td>
+                <td>16.6%</td>
+              </tr>
+              <tr>
+                <td>P(≥#)</td>
+                <td>100%</td>
+                <td>83.3%</td>
+                <td>66.6%<br></td>
+                <td>50%</td>
+                <td>33.3%</td>
+                <td>16.6%</td>
+              </tr>
+              <tr>
+                <td>P(≤#)</td>
+                <td>16.6%</td>
+                <td>33.3%</td>
+                <td>50%</td>
+                <td>66.6%</td>
+                <td>83.3%</td>
+                <td>100%</td>
+              </tr>
+            </tbody>
+            </table>
+            <br/>
+            Rolling a single 20-sided die
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              <td>5%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>95%</td>
+              <td>90%</td>
+              <td>85%</td>
+              <td>80%</td>
+              <td>75%</td>
+              <td>70%</td>
+              <td>65%</td>
+              <td>60%</td>
+              <td>55%</td>
+              <td>50%</td>
+              <td>45%</td>
+              <td>40%</td>
+              <td>35%</td>
+              <td>30%</td>
+              <td>25%</td>
+              <td>20%</td>
+              <td>15%</td>
+              <td>10%</td>
+              <td>5%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>5%</td>
+              <td>10%</td>
+              <td>15%</td>
+              <td>20%</td>
+              <td>25%</td>
+              <td>30%</td>
+              <td>35%</td>
+              <td>40%</td>
+              <td>45%</td>
+              <td>50%</td>
+              <td>55%</td>
+              <td>60%</td>
+              <td>65%</td>
+              <td>70%</td>
+              <td>75%</td>
+              <td>80%</td>
+              <td>85%</td>
+              <td>90%</td>
+              <td>95%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
+            
+            
+            <br/><br/>
             <h3>Multiple (identical) dice</h3>
             When we roll multiple dice we open ourself to a lot more different possible questions about what kind of result we are interested in. We also need some form of notation to express in a compact form. Thankfully there is a very standard notation we can borrow: \(nDm\) means we roll \(n\) \(m\)-sided dice.<br/>
             <br/>
@@ -73,7 +211,84 @@
             \[
             P(\text{given result exactly once on a }nDm\text{ roll}) = \frac{n\times1\times(m-1)^{n-1}}{m^n}
             \]
-            (notice that, since all rolls are equiprobable on a fair die, which specific result you are looking for is irrelevant for the calculation of the probability.)<br/>
+            (notice that, since all rolls are equiprobable on a fair die, which specific result you are looking for is irrelevant for the calculation of the probability.)<br/><br/>
+            <h5>A few common cases</h5>
+            Roll \(3D6\)
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>0.5%</td>
+              <td>1.4%</td>
+              <td>2.8%</td>
+              <td>4.6%</td>
+              <td>6.9%</td>
+              <td>9.7%</td>
+              <td>11.6%</td>
+              <td>12.5%</td>
+              <td>12.5%</td>
+              <td>11.6%</td>
+              <td>9.7%</td>
+              <td>6.9%</td>
+              <td>4.6%</td>
+              <td>2.8%</td>
+              <td>1.4%</td>
+              <td>0.5%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>99.5%</td>
+              <td>98.1%</td>
+              <td>95.4%</td>
+              <td>90.7%</td>
+              <td>83.8%</td>
+              <td>74.1%</td>
+              <td>62.5%</td>
+              <td>50.%</td>
+              <td>37.5%</td>
+              <td>25.9%</td>
+              <td>16.2%</td>
+              <td>9.3%</td>
+              <td>4.6%</td>
+              <td>1.9%</td>
+              <td>0.5%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>0.5%</td>
+              <td>1.9%</td>
+              <td>4.6%</td>
+              <td>9.3%</td>
+              <td>16.2%</td>
+              <td>25.9%</td>
+              <td>37.5%</td>
+              <td>50.%</td>
+              <td>62.5%</td>
+              <td>74.1%</td>
+              <td>83.8%</td>
+              <td>90.7%</td>
+              <td>95.4%</td>
+              <td>98.1%</td>
+              <td>99.5%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
             <br/>
 
             <h4>Probability to get a given roll at least once</h4>
@@ -111,7 +326,7 @@
             This is the hardest problem we will deal with here, and it is one that is very common in many Role-Playing Games. E.g. in Dungeons&Dragons when you roll with <i>advantage</i> you roll twice and keep the highest die, or a common method to roll the character statistics is to roll \(4D6\) and keep the 3 highest (which, on average, lead to higher scores than simply roll \(3D6\)).<br/>
             Let's call \(l\) the smallest value among the \(k\) highest dice, \(i\) the number of dice that rolled less than \(l\), and \(j\) the number of dice that rolled exactly \(l\) (which means that \(n-i-j\) dice rolled more than \(l\)).<br/>
             If \(i+j=n\), there are no dice that rolled higher than \(l\), but since \(l\) is the lowest roll of the \(k\) highest, the only option is that all those \(k\) dice rolled exactly \(l\), and they sum to exactly \(l\times k\).<br/>
-            If \(i+j< n\) (\(i+j\) can't be larger than \(n\)), then \(k-(n-i-j)\) dice rolled exactly \(l\), and sum to \(l\times(k-(n-i-j))\), and the rest of the \(k\) highest dice rolled higher than \(l\). So the number of ways we can get the highest \(k\) dice to sum to \(S\) is the number of ways \(n-i-j\) dice can sum to exactly \(S-l*(k-(n-i-j))\), keeping in mind that these dice can only have results between \(l\) and \(m\). We call this \(N\), and using the probability-generating function discussed above we can see that it is the coefficient of the \(x^{S-l*(k-(n-i-j))}\) term of \((x^l+x^{l+1}+\ldots+x^m)^{n-i-j}\). <br/>
+            If \(i+j< n\) (\(i+j\) can't be larger than \(n\)), then \(k-(n-i-j)\) dice rolled exactly \(l\), and sum to \(l\times(k-(n-i-j))\), and the rest of the \(k\) highest dice rolled higher than \(l\). So the number of ways we can get the highest \(k\) dice to sum to \(S\) is the number of ways \(n-i-j\) dice can sum to exactly \(S-l\times (k-(n-i-j))\), keeping in mind that these dice can only have results between \(l+1\) and \(m\). We call this \(N\), and using the probability-generating function discussed above we can see that it is the coefficient of the \(x^{S-l*(k-(n-i-j))}\) term of \((x^{l+1}+x^{l+2}+\ldots+x^m)^{n-i-j}\). <br/>
             The number of ways we can separate \(n\) dice into a group of \(i\) elements, a group of \(j\) elements, and a group of \(n-i-j\) elements is \(\frac{n!}{i! j! (n-i-j)!}\), and there are \((l-1)^i\) ways to choose the values of the \(i\) dice that are smaller than \(l\). So, we can put all the piece together to find the probability to get a sum \(S\) when rolling \(n\) \(m\)-sided dice and keeping the \(k\) highest ones:
             \[
             P(S) = \frac{1}{m^n}\sum_{i,j,l} \frac{n!}{i! j! (n-i-j)!} (l-1)^i \; N \; .
@@ -126,9 +341,369 @@
             P(S) = \frac{1}{m^n}\sum_{l=1}^{m} \sum_{i=0}^{n-k} \sum_{j=n - k - i + 1}^{n-i} \frac{n!}{i! j! (n-i-j)!} (l-1)^i \; N \; ,
             \]
             (keeping in mind our definition of \(N\), and the fact that the \(i+j=n\) and \(l=1\) cases need to be dealt with separately).
+          <br/>
+            <h5>A few common cases</h5>
+            Roll \(4D6\) and keep the 3 highest ones
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>0.1%</td>
+              <td>0.3%</td>
+              <td>0.8%</td>
+              <td>1.6%</td>
+              <td>2.9%</td>
+              <td>4.8%</td>
+              <td>7.%</td>
+              <td>9.4%</td>
+              <td>11.4%</td>
+              <td>12.9%</td>
+              <td>13.3%</td>
+              <td>12.3%</td>
+              <td>10.1%</td>
+              <td>7.3%</td>
+              <td>4.2%</td>
+              <td>1.6%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>98.4%</td>
+              <td>94.2%</td>
+              <td>87.%</td>
+              <td>76.9%</td>
+              <td>64.5%</td>
+              <td>51.2%</td>
+              <td>38.3%</td>
+              <td>26.9%</td>
+              <td>17.5%</td>
+              <td>10.5%</td>
+              <td>5.7%</td>
+              <td>2.8%</td>
+              <td>1.2%</td>
+              <td>0.4%</td>
+              <td>0.1%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>0.1%</td>
+              <td>0.4%</td>
+              <td>1.2%</td>
+              <td>2.8%</td>
+              <td>5.7%</td>
+              <td>10.5%</td>
+              <td>17.5%</td>
+              <td>26.9%</td>
+              <td>38.3%</td>
+              <td>51.2%</td>
+              <td>64.5%</td>
+              <td>76.9%</td>
+              <td>87.%</td>
+              <td>94.2%</td>
+              <td>98.4%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
 
+              <br/>
+            Roll \(2D20\) and keep the highest one
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>0.2%</td>
+              <td>0.8%</td>
+              <td>1.2%</td>
+              <td>1.8%</td>
+              <td>2.2%</td>
+              <td>2.8%</td>
+              <td>3.2%</td>
+              <td>3.8%</td>
+              <td>4.2%</td>
+              <td>4.8%</td>
+              <td>5.2%</td>
+              <td>5.8%</td>
+              <td>6.2%</td>
+              <td>6.8%</td>
+              <td>7.2%</td>
+              <td>7.8%</td>
+              <td>8.2%</td>
+              <td>8.8%</td>
+              <td>9.2%</td>
+              <td>9.8%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>90.2%</td>
+              <td>81%</td>
+              <td>72.2%</td>
+              <td>64%</td>
+              <td>56.2%</td>
+              <td>49%</td>
+              <td>42.2%</td>
+              <td>36%</td>
+              <td>30.2%</td>
+              <td>25%</td>
+              <td>20.2%</td>
+              <td>16%</td>
+              <td>12.2%</td>
+              <td>9%</td>
+              <td>6.2%</td>
+              <td>4%</td>
+              <td>2.2%</td>
+              <td>1%</td>
+              <td>0.2%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>0.2%</td>
+              <td>1%</td>
+              <td>2.2%</td>
+              <td>4%</td>
+              <td>6.2%</td>
+              <td>9%</td>
+              <td>12.2%</td>
+              <td>16%</td>
+              <td>20.2%</td>
+              <td>25%</td>
+              <td>30.2%</td>
+              <td>36%</td>
+              <td>42.2%</td>
+              <td>49%</td>
+              <td>56.2%</td>
+              <td>64%</td>
+              <td>72.2%</td>
+              <td>81%</td>
+              <td>90.2%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
+              <br/>(notice how both distributions are skewed toward high values).
+          <br/><br/>
+            <h4>Probability to get a sum \(S\) when rolling \(n\) \(m\)-sided dice and keeping the \(k\) lowest ones</h4>
+            This is the twin of the previous problem, and not surprisingly we can solve it by repeating the very same reasoning process.<br/>
+            Let's call \(l\) the highest roll among the \(k\) lowest rolls, \(i\) is the number of dice that rolled more than \(l\), and \(j\) is the number of dice that rolled exactly \(l\) (which means that \(n-j-i\) dice rolled less than \(l\)).<br/>
+            <br/>
+            If \(i+j=n\), there are no dice that rolled lower than \(l\), but since \(l\) is the highest roll of the \(k\) lowest, the only option is that all those \(k\) dice rolled exactly \(l\), and they sum to exactly \(l\times k\).<br/>
+            If \(i+j< n\), then \(k-(n-i-j)\) dice rolled exactly \(l\), and sum to \(l\times(k-(n-i-j))\), and the rest of the \(k\) lowest dice rolled less than \(l\). So the number of ways we can get the highest \(k\) dice to sum to \(S\) is the number of ways \(n-i-j\) dice can sum to exactly \(S-l\times (k-(n-i-j))\), keeping in mind that these dice can only have results between \(1\) and \(l-1\). We call this \(M\), and using the probability-generating function discussed above we can see that it is the coefficient of the \(x^{S-l*(k-(n-i-j))}\) term of \((x^1+x^{2}+\ldots+x^{l-1})^{n-i-j}\). <br/>
+            The number of ways we can separate \(n\) dice into a group of \(i\) elements, a group of \(j\) elements, and a group of \(n-i-j\) elements is \(\frac{n!}{i! j! (n-i-j)!}\), and there are \((m-l)^i\) ways to choose the values of the \(i\) dice that are higher than \(l\). So, we can put all the piece together to find the probability to get a sum \(S\) when rolling \(n\) \(m\)-sided dice and keeping the \(k\) highest ones:
+            \[
+            P(S) = \frac{1}{m^n}\sum_{i,j,l} \frac{n!}{i! j! (n-i-j)!} (m-l)^i \; M \; .
+            \]
+            Similarly to before, if \(l=m\), then there is no way a die can roll higher than \(l\), and thus \(i=0\). In this case the number ways to choose the values of the \(i\) dice that are higher than \(l\) is <b>not</b> \((m-l)^i\) (which would give us an indeterminate \(0^0\)), but just 1. The arguments for the maximum/minimum values \(l\), \(i\), and \(j\) can take are exactly the same as before, so we finally get:
+            \[
+            P(S) = \frac{1}{m^n}\sum_{l=1}^{m} \sum_{i=0}^{n-k} \sum_{j=n - k - i + 1}^{n-i} \frac{n!}{i! j! (n-i-j)!} (m-l)^i \; M \; ,
+            \]
+            which is almost the same formula as before.
+          <br/>
 
+          <br/>
+            <h5>A few common cases</h5>
+            Roll \(4D6\) and keep the 3 lowest ones
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>1.6%</td>
+              <td>4.2%</td>
+              <td>7.3%</td>
+              <td>10.1%</td>
+              <td>12.3%</td>
+              <td>13.3%</td>
+              <td>12.9%</td>
+              <td>11.4%</td>
+              <td>9.4%</td>
+              <td>7.%</td>
+              <td>4.8%</td>
+              <td>2.9%</td>
+              <td>1.6%</td>
+              <td>0.8%</td>
+              <td>0.3%</td>
+              <td>0.1%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>99.9%</td>
+              <td>99.6%</td>
+              <td>98.8%</td>
+              <td>97.2%</td>
+              <td>94.3%</td>
+              <td>89.5%</td>
+              <td>82.5%</td>
+              <td>73.1%</td>
+              <td>61.7%</td>
+              <td>48.8%</td>
+              <td>35.5%</td>
+              <td>23.1%</td>
+              <td>13%</td>
+              <td>5.8%</td>
+              <td>1.6%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>1.6%</td>
+              <td>5.8%</td>
+              <td>13%</td>
+              <td>23.1%</td>
+              <td>35.5%</td>
+              <td>48.8%</td>
+              <td>61.7%</td>
+              <td>73.1%</td>
+              <td>82.5%</td>
+              <td>89.5%</td>
+              <td>94.3%</td>
+              <td>97.2%</td>
+              <td>98.8%</td>
+              <td>99.6%</td>
+              <td>99.9%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
 
+            <br/>
+            Roll \(2D20\) and keep the lowest result
+            <table id="table1"><thead><tr>
+              <th>#</th>
+              <th>1</th>
+              <th>2</th>
+              <th>3</th>
+              <th>4</th>
+              <th>5</th>
+              <th>6</th>
+              <th>7</th>
+              <th>8</th>
+              <th>9</th>
+              <th>10</th>
+              <th>11</th>
+              <th>12</th>
+              <th>13</th>
+              <th>14</th>
+              <th>15</th>
+              <th>16</th>
+              <th>17</th>
+              <th>18</th>
+              <th>19</th>
+              <th>20</th>
+              </tr></thead>
+              <tbody><tr>
+              <td>P(#)</td>
+              <td>9.8%</td>
+              <td>9.2%</td>
+              <td>8.8%</td>
+              <td>8.2%</td>
+              <td>7.8%</td>
+              <td>7.2%</td>
+              <td>6.8%</td>
+              <td>6.2%</td>
+              <td>5.8%</td>
+              <td>5.2%</td>
+              <td>4.8%</td>
+              <td>4.2%</td>
+              <td>3.8%</td>
+              <td>3.2%</td>
+              <td>2.8%</td>
+              <td>2.2%</td>
+              <td>1.8%</td>
+              <td>1.2%</td>
+              <td>0.8%</td>
+              <td>0.2%</td>
+              </tr></tbody>
+              <td>P(≥#)</td>
+              <td>100%</td>
+              <td>99.8%</td>
+              <td>99%</td>
+              <td>97.8%</td>
+              <td>96%</td>
+              <td>93.8%</td>
+              <td>91%</td>
+              <td>87.8%</td>
+              <td>84%</td>
+              <td>79.8%</td>
+              <td>75%</td>
+              <td>69.8%</td>
+              <td>64%</td>
+              <td>57.8%</td>
+              <td>51%</td>
+              <td>43.8%</td>
+              <td>36.%</td>
+              <td>27.8%</td>
+              <td>19%</td>
+              <td>9.8%</td>
+              </tr></tbody>
+              <td>P(≤#)</td>
+              <td>9.8%</td>
+              <td>19%</td>
+              <td>27.8%</td>
+              <td>36.%</td>
+              <td>43.8%</td>
+              <td>51.%</td>
+              <td>57.8%</td>
+              <td>64.%</td>
+              <td>69.8%</td>
+              <td>75%</td>
+              <td>79.8%</td>
+              <td>84.%</td>
+              <td>87.8%</td>
+              <td>91%</td>
+              <td>93.8%</td>
+              <td>96.%</td>
+              <td>97.8%</td>
+              <td>99%</td>
+              <td>99.8%</td>
+              <td>100%</td>
+              </tr></tbody>
+              </table>
 
 
 
