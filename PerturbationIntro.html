@@ -44,7 +44,7 @@
             \[\sin\theta \sim \theta - \frac{\theta^3}{6}+\frac{\theta^5}{120} + \ldots\]
             and keep only the lowest non-zero term, resulting in the harmonic oscillator equation \(\ddot \theta+\omega_0^2\theta=0\). This is an exceedingly useful approximation, as harmonic oscillators are the building block of most Physical theories, but what if we want to relax our approximation a little bit and take the next non-zero term in the Taylor expansion? We can certainly do that, but the resulting differential equation is now as difficult to solve as the original un-approximated simple pendulum equation (it requires elliptic integrals), and thus it is not a very useful way to proceed.<br />
             What we can do instead is to say that we have small oscillations means we are starting with initial conditions
-            \[\theta(0)=\varepsilon \quad \dot\theta(0)=0\]
+            \[\theta(0)=\varepsilon \quad , \quad \dot\theta(0)=0\]
             where \(\varepsilon\) is a small number. We don't know what the solution will be, but we know that it will depend on \(\varepsilon\), so we can expand our solution as a Taylor series in \(\varepsilon\):
             \[\theta(t, \varepsilon) = \theta_0(t) + \varepsilon \theta_1(t)+\varepsilon^2 \theta_2(t) + \varepsilon^3\theta_3(t)+\ldots\]
             where \(\theta_0\), \(\theta_1\), etc do not depend on \(\varepsilon\). And if \(\varepsilon\) is indeed small, the higher terms in this expansion are going to be negligible, and \(\theta_1\) will be a small correction to \(\theta_0\), \(\theta_2\) will be a small correction to \(\theta_1\), and so on.<br />
@@ -144,8 +144,8 @@
             \]
             and
             \(
-            \omega(\varepsilon) \simeq \omega_0 +\varepsilon^2 \omega_2 = \omega_0 -\frac{\varepsilon^2 \omega}{192}
-            \). But since we are only looking up to second order, higher orders in the \(\omega\) expansion on the right hand side can be neglected, and we have \(\omega(\varepsilon)\simeq (1-\frac{\varepsilon^2 }{192})\omega_0 \).<br />
+            \omega(\varepsilon) \simeq \omega_0 +\varepsilon^2 \omega_2 = \omega_0 -\frac{\varepsilon^2 \omega}{16}
+            \). But since we are only looking up to second order, higher orders in the \(\omega\) expansion on the right hand side can be neglected, and we have \(\omega(\varepsilon)\simeq (1-\frac{\varepsilon^2 }{16})\omega_0 \).<br />
             Notice that this technique, i.e. to let a parameter vary and then adjust it to cancel the spurious infinities, is closely related to the process of <em>renormalization</em> common in field theory.
             <br /><br />
 
